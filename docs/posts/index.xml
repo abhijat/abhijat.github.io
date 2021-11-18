@@ -1,1 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Notes</title><link>https://abhijat.github.io/posts/</link><description>Recent content in Posts on Notes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 18 Nov 2021 13:16:02 +0530</lastBuildDate><atom:link href="https://abhijat.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>First</title><link>https://abhijat.github.io/posts/first/</link><pubDate>Thu, 18 Nov 2021 13:16:02 +0530</pubDate><guid>https://abhijat.github.io/posts/first/</guid><description>&lt;p>Test content&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Notes</title><link>https://abhijat.github.io/posts/</link><description>Recent content in Posts on Notes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 18 Nov 2021 13:28:51 +0530</lastBuildDate><atom:link href="https://abhijat.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Understanding X - 1</title><link>https://abhijat.github.io/posts/understanding_minus_one/</link><pubDate>Thu, 18 Nov 2021 13:28:51 +0530</pubDate><guid>https://abhijat.github.io/posts/understanding_minus_one/</guid><description>&lt;p>When subtracting one from a number, its binary representation changes in a predicable and useful manner:&lt;/p>
+&lt;ul>
+&lt;li>All the trailing consecutive zeroes are flipped to ones&lt;/li>
+&lt;li>The first bit set to one found starting from the right is cleared to zero&lt;/li>
+&lt;/ul>
+&lt;p>As an example, consider&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">x &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">3&lt;/span> &lt;span style="color:#75715e"># 11&lt;/span>
+x - &lt;span style="color:#ae81ff">1&lt;/span> &lt;span style="color:#75715e"># 10&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Here there are no trailing zeroes. So only the second change happens. The first one (which is the least significant bit) is flipped.&lt;/p>
+&lt;p>We can also see that no bits to the left of the &amp;ldquo;one&amp;rdquo; which is flipped are ever affected.&lt;/p>
+&lt;p>Here the unchanged part, the &amp;ldquo;wall&amp;rdquo; bit and the rest are separated by spaces for clarity:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">1111100_1_000 -
+0000000_0_001
+1111100_0_111
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>The 1 bit in braces is the point where the changes to the bit pattern stop. It is flipped to 0. Everything to its right is flipped to 1. Everything to its left remains untouched.&lt;/p></description></item></channel></rss>
