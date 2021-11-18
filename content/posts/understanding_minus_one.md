@@ -2,6 +2,10 @@
 title: "Understanding X - 1"
 date: 2021-11-18T13:28:51+05:30
 draft: false
+tags:
+- bitmanip
+categories:
+- programming
 ---
 
 When subtracting one from a number, its binary representation changes in a predicable and useful manner:
@@ -30,4 +34,9 @@ Here the unchanged part, the "wall" bit and the rest are separated by spaces for
 ```
 
 The 1 bit in braces is the point where the changes to the bit pattern stop. It is flipped to 0. Everything to its right is flipped to 1. Everything to its left remains untouched.
+
+------
+tags: [bitmanip](/tags/bitmanip)
+
+categories: [programming](/categories/programming/)
 
