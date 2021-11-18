@@ -12,4 +12,7 @@ x - &lt;span style="color:#ae81ff">1&lt;/span> &lt;span style="color:#75715e"># 
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">1111100_1_000 -
 0000000_0_001
 1111100_0_111
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>The 1 bit in braces is the point where the changes to the bit pattern stop. It is flipped to 0. Everything to its right is flipped to 1. Everything to its left remains untouched.&lt;/p></description></item></channel></rss>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>The 1 bit in braces is the point where the changes to the bit pattern stop. It is flipped to 0. Everything to its right is flipped to 1. Everything to its left remains untouched.&lt;/p>
+&lt;hr>
+&lt;p>tags: &lt;a href="https://abhijat.github.io/tags/bitmanip">bitmanip&lt;/a>&lt;/p>
+&lt;p>categories: &lt;a href="https://abhijat.github.io/categories/programming/">programming&lt;/a>&lt;/p></description></item></channel></rss>
