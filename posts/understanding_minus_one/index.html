@@ -1,0 +1,42 @@
+<!doctype html><html><head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" href=https://abhijat.github.io/favicon.ico>
+<link rel=stylesheet href=/css/style.min.css>
+<title>Understanding X - 1</title>
+</head>
+<body><header id=banner>
+<h2><a href=https://abhijat.github.io/>Notes</a></h2>
+<nav>
+<ul>
+</ul>
+</nav>
+</header>
+<main id=content>
+<article>
+<header id=post-header>
+<h1>Understanding X - 1</h1>
+<div>
+<time>November 18, 2021</time>
+</div>
+</header><p>When subtracting one from a number, its binary representation changes in a predicable and useful manner:</p>
+<ul>
+<li>All the trailing consecutive zeroes are flipped to ones</li>
+<li>The first bit set to one found starting from the right is cleared to zero</li>
+</ul>
+<p>As an example, consider</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>x <span style=color:#f92672>=</span> <span style=color:#ae81ff>3</span> <span style=color:#75715e># 11</span>
+x - <span style=color:#ae81ff>1</span> <span style=color:#75715e># 10</span>
+</code></pre></div><p>Here there are no trailing zeroes. So only the second change happens. The first one (which is the least significant bit) is flipped.</p>
+<p>We can also see that no bits to the left of the &ldquo;one&rdquo; which is flipped are ever affected.</p>
+<p>Here the unchanged part, the &ldquo;wall&rdquo; bit and the rest are separated by spaces for clarity:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>1111100_1_000 -
+0000000_0_001
+
+1111100_0_111
+</code></pre></div><p>The 1 bit in braces is the point where the changes to the bit pattern stop. It is flipped to 0. Everything to its right is flipped to 1. Everything to its left remains untouched.</p>
+</article>
+</main><footer id=footer>
+</footer>
+</body>
+</html>
